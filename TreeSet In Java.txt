@@ -1,0 +1,67 @@
+
+
+TreeSet is same as Set in C++ , 
+Only for removal use case , we need to provide a custom comparator . To handle explicit removal of object from TreeSet , we need to provide a custom comparator 
+
+class Pair {
+
+            int first;
+            int second;
+
+            public Pair(int first , int second) {
+
+                this.first = first;
+                this.second = second;
+            }
+        }
+
+        TreeSet<Pair> treeSet = new TreeSet<>((a , b) -> {
+
+            if(a.second == b.second) {
+                return b.first - a.first;
+            }
+            return b.second - a.second;
+        });
+
+        treeSet.add(new Pair(1 , 2 ));
+        treeSet.add(new Pair(3 , 4));
+        treeSet.add(new Pair(5 , 6));
+        treeSet.add(new Pair(7 , 8));
+
+        Iterator<Pair> iterator = treeSet.iterator();
+
+        while(iterator.hasNext()){
+
+            Pair p = iterator.next();
+            System.out.println(p.first + "," + p.second);
+        }
+
+
+
+        System.out.println(treeSet.remove(new Pair(5 , 6)));
+
+        iterator = treeSet.iterator();
+        while(iterator.hasNext()){
+
+            Pair p = iterator.next();
+            System.out.println(p.first + "," + p.second);
+        }
+
+
+
+
+Custom comparator :- 
+
+if(a.second == b.second) {
+    return b.first - a.first;
+}
+return b.second - a.second;
+
+This removes the System.out.println(treeSet.remove(new Pair(5 , 6))); , as it finds the exact match for the element and removes easily . 
+
+And for iterator through the treeSet we have 
+
+Iterator<Pair>  iterator = treeSet.iterator() , function 
+
+and while(iterator.hasNext()) --> condition to iterate through the elements . 
+
