@@ -1,0 +1,49 @@
+How To Traverse a HashMap in Java 
+
+Multiple ways are there 
+
+HashMap<Integer, String> map = new HashMap<>(); 
+
+
+// Using entrySet to traverse
+for (Map.Entry<Integer, String> entry : map.entrySet()) {
+    System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
+}
+
+
+// Using keySet to traverse
+for (Integer key : map.keySet()) {
+    System.out.println("Key: " + key + ", Value: " + map.get(key));
+}
+
+
+
+// Using values() to traverse
+for (String value : map.values()) {
+    System.out.println("Value: " + value);
+}
+
+
+// Using entrySet with iterator
+Iterator<Map.Entry<Integer, String>> iterator = map.entrySet().iterator();
+while (iterator.hasNext()) {
+    Map.Entry<Integer, String> entry = iterator.next();
+    System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
+}
+
+
+// Using forEach method (Java 8+)
+map.forEach((key, value) -> System.out.println("Key: " + key + ", Value: " + value));
+
+// Using streams to traverse
+map.entrySet().stream()
+.forEach(entry -> System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue()));
+
+
+// Using keySet with iterator
+Iterator<Integer> keyIterator = map.keySet().iterator();
+while (keyIterator.hasNext()) {
+    Integer key = keyIterator.next();
+    System.out.println("Key: " + key + ", Value: " + map.get(key));
+}
+
