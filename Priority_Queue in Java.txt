@@ -1,0 +1,51 @@
+By Default in Java priority queue is min heap 
+So 
+
+PriorityQueue<Integer> minHeap = new PriorityQueue<>(); 
+// Adding elements
+minHeap.add(5);
+minHeap.add(1);
+minHeap.add(3);
+
+// Removing elements
+System.out.println(minHeap.poll()); // Output: 1 (smallest element)
+System.out.println(minHeap.poll()); // Output: 3
+System.out.println(minHeap.poll()); // Output: 5
+
+
+
+If we want to create maxHeap , we will have to provide a comparator for it in the arguments 
+
+PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());          OR    PriorityQueue<Integer> customQueue = new PriorityQueue<>((a, b) -> b - a);  
+// a then b in that order , then place b - a > 0 then swap , basically put the larger number in front 
+
+// Adding elements
+maxHeap.add(5);
+maxHeap.add(1);
+maxHeap.add(3);
+
+// Removing elements
+System.out.println(maxHeap.poll()); // Output: 5 (largest element)
+System.out.println(maxHeap.poll()); // Output: 3
+System.out.println(maxHeap.poll()); // Output: 1
+
+
+
+Key Methods:
+add(E e) or offer(E e): Inserts an element into the queue.
+poll(): Removes and returns the head of the queue (the smallest or largest element based on the comparator). --> will give the top element and pop it as well 
+peek(): Retrieves, but does not remove, the head of the queue.
+isEmpty(): Checks if the queue is empty.
+
+
+
+Initializing a priorityQueue Array for size n 
+
+int n = 5; // Size of the array
+PriorityQueue<Integer>[] pqArray = new PriorityQueue[n];   --> this helps in creating an Array of size n 
+
+// Initialize each PriorityQueue in the array
+for (int i = 0; i < n; i++) {
+    pqArray[i] = new PriorityQueue<>();                 ----> This is required for initializing an array 
+}
+
