@@ -1,0 +1,23 @@
+In Java for construncting a String , 
+
+
+Always prefer StringBuilder , 
+
+Its not like C++ , we can use S = S + '!' . Each time we do this + operation in Java , it creates a new String . 
+
+Hence we use StringBuilder to first append all the characters and then return the String 
+
+
+StringBuilder :- 
+
+StringBuilder sb = new StringBuilder("Hello");
+
+// Append characters or strings
+sb.append(" World");
+sb.append('!');
+
+// Convert to String and return
+String result = sb.toString();
+System.out.println(result); // Output: Hello World!
+
+This is the best way to append in the String 
