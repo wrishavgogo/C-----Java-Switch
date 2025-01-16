@@ -50,3 +50,16 @@ StringBuilder sb = new StringBuilder("Hello World");
 sb.reverse();
 sb.toString(); -> will return the reversed String 
 
+
+**** String to Integer Conversion :- 
+
+String st = "365";
+Integer number = Integer.valueOf(st);
+System.out.println("Converted integer: " + number); // Output: 365
+
+
+*** String Comparison is simple in Java 
+
+String s1 = "asdsa";
+String s2 = "sds";
+s1.equals(s2)
