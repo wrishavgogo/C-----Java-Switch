@@ -8,7 +8,7 @@ Its not like C++ , we can use S = S + '!' . Each time we do this + operation in 
 Hence we use StringBuilder to first append all the characters and then return the String 
 
 
-StringBuilder :- 
+** StringBuilder :- 
 
 StringBuilder sb = new StringBuilder("Hello");
 
@@ -21,3 +21,25 @@ String result = sb.toString();
 System.out.println(result); // Output: Hello World!
 
 This is the best way to append in the String 
+
+
+
+** To Access Character at any index in Java , we have to use charAt(index) function 
+
+String s = "hELLO wORLD!". 
+s.charAt(5); 
+
+
+** To get the length of a string : int length = string.length(); 
+
+
+** To Compare Character :- 
+
+if (s.charAt(i) == '(') , 
+
+Imp:- 
+
+Why Not .equals()?
+** The .equals() method is used for comparing objects.
+** s.charAt(i) returns a char, which is a primitive type, so .equals() is not valid for it.
+
