@@ -1,0 +1,10 @@
+
+HashSet is like unordered Set in java , 
+
+HashSet<Integer> set = new HashSet<>();  
+
+here insert function is not there 
+
+here we have 
+set.add(i); 
+set.contains(i); 
