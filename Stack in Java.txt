@@ -10,3 +10,8 @@ Key Methods :-
 4. isEmpty(): Checks if the stack is empty.
 5. search(Object o): Returns the 1-based position of the object in the stack. Returns -1 if the object is not found. ---> This is new functionality of search , Not present in C++
 6. size(): Returns the number of elements in the stack.
+
+
+*** To Remove all elements at once from the Stack :- 
+
+st.clear() ; --> empties the stack
