@@ -1,0 +1,26 @@
+
+
+**** Creation of Queue : 
+
+Queue<String> queue = new LinkedList<>();
+
+
+**** Adding elements to the Queue : 
+
+queue.add("Alice");  // Throws exception if the queue is full
+queue.offer("Bob");  // Returns false if queue is full
+
+
+**** Peek at the front element
+queue.peek()  // Returns null if empty
+queue.element() // Throws exception if empty
+
+
+**** removing elements 
+
+queue.poll()  // Returns null if empty
+queue.remove()  // Throws exception if empty
+
+
+
+**** add() will never throw error , if we are using LinkedList<>() to create an Array , but if we are using BlockingQueue then we have limited size and will need throw error 
