@@ -1,0 +1,11 @@
+
+In this List in java there are specific ways to access and handle it which are different from normal Array 
+
+*** To get Length of the List 
+
+ List<Integer> nums = new ArrayList<>(); 
+ nums.size() -> .size() function has to be used 
+
+*** To get element at index i 
+
+ nums.get(i) -> .get() method has to be used 
