@@ -9,3 +9,7 @@ In this List in java there are specific ways to access and handle it which are d
 *** To get element at index i 
 
  nums.get(i) -> .get() method has to be used 
+
+*** Why Functions are there in List and not in normal Array ? 
+
+ArrayList internally is implemented by LinkedList , and hence for Data Hiding and encapsulation Data is required to be hidden and functions have been made 
