@@ -1,0 +1,4 @@
+
+*** Function to Count Number of Set bits :- 
+
+Integer.bitCount(i) == k , gives the number of set bits of i 
