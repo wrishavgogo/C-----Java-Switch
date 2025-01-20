@@ -65,3 +65,13 @@ Iterator<Pair>  iterator = treeSet.iterator() , function
 
 and while(iterator.hasNext()) --> condition to iterate through the elements . 
 
+
+
+****  Unlike C++ , its very easy to access the last and first element of the TreeSet in java :- 
+
+TreeSet<Integer> treeSet = new TreeSet<>();
+
+int minElement = treeSet.first();
+int maxElement = treeSet.last();
+
+
