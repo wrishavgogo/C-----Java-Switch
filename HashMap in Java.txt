@@ -1,3 +1,6 @@
+HashMap is like unorderedMap in c++ ,
+
+
 How To Traverse a HashMap in Java 
 
 Multiple ways are there 
