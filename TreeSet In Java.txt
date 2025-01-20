@@ -75,3 +75,14 @@ int minElement = treeSet.first();
 int maxElement = treeSet.last();
 
 
+
+**** Issue while deleting  element from TreeSet :- 
+
+its always safe to provide a full equals in the custom operator 
+
+if(a.first == b.first && a.second == b.second) {
+return 0; 
+} 
+
+else TreeSet functions faultily 
+
