@@ -62,6 +62,7 @@ Arrays Of Array , learnt  a new thing in Java which is not possible in C++ .
 
 int[][] graph = {{1,2}, {3}, {3}, {}};
 this makes in java possible to create a 2D array with each index having different length of arrays . 
+This type of Array is called A jagged array is an array of arrays where each row (or sub-array) can have a different length.
 
 so if you do graph[1][1] , it will throw Array.outOfBoundsException . 
 
