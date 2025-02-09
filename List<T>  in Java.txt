@@ -6,6 +6,12 @@ In this List in java there are specific ways to access and handle it which are d
  List<Integer> nums = new ArrayList<>(); 
  nums.size() -> .size() function has to be used 
 
+Very Important : 
+
+List do not have .length property , 
+Only Arrays have it , 
+and String and List have .length() and .size() respectively 
+
 *** To get element at index i 
 
  nums.get(i) -> .get() method has to be used 
