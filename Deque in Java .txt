@@ -1,0 +1,46 @@
+
+
+Deque  is that slick datastructure which allows operations on the front and back of the queue , which is useful in many operations 
+
+Code for it **************************
+
+
+Deque<Integer> q = new ArrayDeque<>();  ---> faster 
+Deque<Integer> q1 = new LinkedList<>(); ---> slower 
+
+
+Basic Operations :------
+
+q.offerFirst() ---> adds element to the front of the queue 
+q.offerLast() ------> adds element to the end of the queue
+
+q.pollFirst() --> removes element from the front of the queue
+q.pollLast() --> removes element from the end of the queue 
+
+
+
+
+Q) why is Array Deque fast than LinkedList implementation of Deque ?
+
+
+
+1.    Contiguos Memory  
+
+ArrayDeque has been implemented using Arrays , so it is contiguous block of memory , 
+Linkedlist has to travel to the next node using pointers , and randomAccess takes time 
+
+
+2. No Frequent Element Creation 
+
+In case of resizing  , ArrayDeque , creates double its previous size and LinkedList just has to find a new block of memoery and point to that 
+Access to next element is easy in ArrayDeque, and in LinkedList it has to reach to the pointer and the reference it is pointing to . 
+
+3. Lower Memory 
+
+ArrayDeque only stores elements in the array , LinkedList has to store next , prev pointers with itself . 
+Example:
+If each int takes 4 bytes, a node in LinkedList might take:
+
+4 bytes (data) + 8 bytes (next) + 8 bytes (prev) = 20 bytes per element (on a 64-bit system).
+Whereas in ArrayDeque, the storage is just the array, with no extra pointers
+
