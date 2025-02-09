@@ -8,3 +8,25 @@ here insert function is not there
 here we have 
 set.add(i); 
 set.contains(i); 
+
+
+
+Iterator : to traverse the elements of the Set 
+
+Set<Integer> st = new HashSet<>();
+Iterator it = st.iterator().next();
+
+
+
+
+When Iterator is created its not pointing at any element , when we call the .next() method it starts pointing to the next element . 
+
+Set<String> st = new HashSet<>();
+st.add("A");
+st.add("B");
+st.add("C");
+
+Iterator<String> it = st.iterator(); // Iterator is created
+At this moment, the iterator is not pointing to any element. You need to call next() to move it to the first element.
+
+
