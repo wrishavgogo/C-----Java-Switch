@@ -1,0 +1,23 @@
+
+
+Lets say you n = 6, edges = [[0,1],[0,2],[3,5],[5,4],[4,3]]
+
+and you have to construct graph in java . Its same as c++ only , but here since we are working at ground level and we are not abstracted by STL library , 
+hence we can directly write code and visualize creation of graphs 
+
+
+Like vectors only , 
+
+for each index , we need a list of integer .  
+
+In Java when we create an ArrayList like --> List<Integer> arr = new ArrayList<>(n) . It creates an ArrayList of size N  for us .
+and to add integers we do normally . arr.add(1) , arr.add(2) 
+
+List<List<Integer>> arr = new ArrayList<>(n) ;
+
+Similarly here we need to keep appending arrayLists , so its basically 
+
+for(int i = 0 ; i < n ; i ++ ) { 
+  arr.add(new ArrayList<>());
+}
+
