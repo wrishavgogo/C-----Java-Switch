@@ -63,3 +63,8 @@ System.out.println("Converted integer: " + number); // Output: 365
 String s1 = "asdsa";
 String s2 = "sds";
 s1.equals(s2)
+
+**** Integer to String Conversion :- 
+
+Integer number = 345;
+String num = String.valueOf(number);
