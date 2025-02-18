@@ -50,3 +50,22 @@ while (keyIterator.hasNext()) {
     System.out.println("Key: " + key + ", Value: " + map.get(key));
 }
 
+
+
+
+******************************************************************     How to create a Map initialised with values itself . 
+
+This style works for 10 entries at max 
+Map<String , String > mp = Map.of(
+        "a","apple",
+        "b","ball"
+);
+
+Next style works for infinite entries 
+Map<String , String> mp = Map.ofEntries(
+    entry("a","apple"),
+    entry("b","ball")
+);
+
+We can make infinite entries using this 
+
