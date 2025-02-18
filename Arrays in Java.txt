@@ -67,3 +67,10 @@ This type of Array is called A jagged array is an array of arrays where each row
 so if you do graph[1][1] , it will throw Array.outOfBoundsException . 
 
 
+
+                                                                                          *************************
+
+Initializing an integer array with values 
+
+int[] myIntArray = new int[]{1, 2, 3}; of size 3 
+
