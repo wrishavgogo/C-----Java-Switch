@@ -1,0 +1,11 @@
+                                                                                          *****************************
+In Java 
+int cannot be compared to boolean , here 0 is not interpreted as false in if / while conditions 
+
+while(quotient -- )  will throw error 
+
+
+you have to do 
+while(quotient > 0 ) {
+  quotient--;
+}
