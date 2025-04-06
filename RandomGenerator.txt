@@ -1,0 +1,17 @@
+
+
+in java there is a class Random  , 
+it has a function .nextInt(k) ---> this generates from 0 upto k - 1 values
+
+ifyou want to generate random numbers within a rand [min , max] inclusive 
+int diff = max - min; 
+int val = rand.nextInt(diff + 1) + min
+
+// lets say min = 55 and max = 65 , we want 55 to 65 any random number
+// diff = 10 .nextInt(10) generates 0 to 9 , 
+// num = 55 + nextInt(10) 55 to 64 , missing out on 65 
+// num = 55 + nextInt(10 + 1 ) 55 to 65 , just increase diff by 1 so it generates from 0 to diff integers
+// such that min + diff also gets generated 
+
+Random rand = new Random();
+int num = rand.nextInt(5);  // Generates: 0, 1, 2, 3, or 4 (NOT 5)
