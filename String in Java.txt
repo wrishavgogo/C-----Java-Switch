@@ -1,6 +1,10 @@
 In Java for construncting a String , 
 
 
+Characters special update : 
+
+Characters.isDigit(ch1) ---> checks if this is a character or not  
+
 Always prefer StringBuilder , 
 
 Its not like C++ , we can use S = S + '!' . Each time we do this + operation in Java , it creates a new String . 
