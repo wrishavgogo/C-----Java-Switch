@@ -1,0 +1,3 @@
+Characters special update : 
+
+Characters.isDigit(ch1) ---> checks if this is a character or not  
