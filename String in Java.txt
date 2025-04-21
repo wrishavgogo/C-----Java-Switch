@@ -1,9 +1,7 @@
 In Java for construncting a String , 
 
 
-Characters special update : 
 
-Characters.isDigit(ch1) ---> checks if this is a character or not  
 
 Always prefer StringBuilder , 
 
