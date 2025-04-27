@@ -1,0 +1,12 @@
+Easy way to find number of digits in the integer
+
+int x = nums[i];
+int digits = (x == 0 ? 1 : (int) Math.log10(x) + 1);
+
+x = 89 , 
+(int)Math.log(89) = 1
++ 1 (with it ) = 2 
+
+x = 100,
+(int) Math.log(100) = 2
++1 (with it ) = 3 
