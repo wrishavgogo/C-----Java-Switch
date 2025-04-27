@@ -19,3 +19,15 @@ and String and List have .length() and .size() respectively
 *** Why Functions are there in List and not in normal Array ? 
 
 ArrayList internally is implemented by LinkedList , and hence for Data Hiding and encapsulation Data is required to be hidden and functions have been made 
+
+
+*** to add an element at any position to change the size of the list ****
+
+
+list.add(index, element);
+list.add(1 , 4) -> adds 4 b/w 1 and 2
+list.add(0 , 5) -> adds 5 in the front of the list 
+
+Original List: [1, 2, 3]
+List after adding 4 at index 1: [1, 4, 2, 3]
+List after adding 5 at index 0: [5, 1, 4, 2, 3]
