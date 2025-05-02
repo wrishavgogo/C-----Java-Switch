@@ -31,3 +31,14 @@ list.add(0 , 5) -> adds 5 in the front of the list
 Original List: [1, 2, 3]
 List after adding 4 at index 1: [1, 4, 2, 3]
 List after adding 5 at index 0: [5, 1, 4, 2, 3]
+
+
+*************************************************** ways to reverse an arrayList *******************************************
+
+List<Integer> ans = new ArrayList<>();
+ans.add(1);
+ans.add(2);
+ans.add(3);
+ans.add(4);
+
+Collections.reverse(ans);   <------ this is used to reverse an arrayList 
