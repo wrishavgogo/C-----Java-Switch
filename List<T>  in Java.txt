@@ -25,7 +25,7 @@ ArrayList internally is implemented by LinkedList , and hence for Data Hiding an
 
 
 list.add(index, element);
-list.add(1 , 4) -> adds 4 b/w 1 and 2
+list.add(1 , 4) -> adds 4 b/w 0  and 1 -> it will add in such a way , that 4 gets placed at index 1
 list.add(0 , 5) -> adds 5 in the front of the list 
 
 Original List: [1, 2, 3]
