@@ -1,7 +1,7 @@
 
 In this List in java there are specific ways to access and handle it which are different from normal Array 
 
-*** To get Length of the List 
+*************************************************** To get Length of the List *******************************************
 
  List<Integer> nums = new ArrayList<>(); 
  nums.size() -> .size() function has to be used 
@@ -12,16 +12,17 @@ List do not have .length property ,
 Only Arrays have it , 
 and String and List have .length() and .size() respectively 
 
-*** To get element at index i 
+*************************************************** To get element at index i *******************************************
 
  nums.get(i) -> .get() method has to be used 
 
-*** Why Functions are there in List and not in normal Array ? 
+
+***************************************************  Why Functions are there in List and not in normal Array ? *******************************************
 
 ArrayList internally is implemented by LinkedList , and hence for Data Hiding and encapsulation Data is required to be hidden and functions have been made 
 
 
-*** to add an element at any position to change the size of the list ****
+*************************************************** to add an element at any position to change the size of the list *******************************************
 
 
 list.add(index, element);
