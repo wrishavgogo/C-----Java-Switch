@@ -83,3 +83,12 @@ seq[3] = 'D';
 
 String str = new String(seq);
 System.out.println(str); 
+
+
+To convert a String back to a char[] in Java, use the .toCharArray() method:
+
+java
+Copy
+Edit
+String str = "ABCD";
+char[] seq = str.toCharArray();
