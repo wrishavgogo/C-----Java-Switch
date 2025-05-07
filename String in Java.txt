@@ -70,3 +70,16 @@ s1.equals(s2)
 
 Integer number = 345;
 String num = String.valueOf(number);
+
+
+Character Array to String conversion
+
+char[] seq = new char[4];
+// Example initialization
+seq[0] = 'A';
+seq[1] = 'B';
+seq[2] = 'C';
+seq[3] = 'D';
+
+String str = new String(seq);
+System.out.println(str); 
