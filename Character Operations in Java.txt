@@ -36,7 +36,12 @@ System.out.println("Modified Character: " + ch); // Output: H
 
 
 
+
+
 *** Checking if character isDigit or not 
 Character.isDigit(char ch) -> returns true if within '0-9' 
+
+*** Checking if character is letter or Digit 
+Character.isLetterOrDigit(char ch)
 
 
